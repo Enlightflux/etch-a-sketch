@@ -1,0 +1,47 @@
+:root {
+  --pinkred: #ff347f;
+  --darkpink: #c9356c;
+  --lightpink: #f48db4;
+  --gray: #fafafa;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Funnel Display';
+}
+
+.mainContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+.mainTitle {
+  font-family: Calligraffitti;
+  text-align: center;
+  font-size: 50px;
+  /* color: magenta; */
+}
+
+.mainSubtitle {
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.buttonsArea {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.buttonsArea button {
+  padding: 10px 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: lightblue;
+  color: white;
+  min-width: 0;
+}
