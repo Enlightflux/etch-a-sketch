@@ -3,17 +3,20 @@
   --darkpink: #c9356c;
   --lightpink: #f48db4;
   --gray: #fafafa;
+  /* --grid-size: 16; */
 }
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   font-family: 'Funnel Display';
+  /* background-color: antiquewhite; */
 }
 
 .mainContainer {
-  width: 100%;
-  max-width: 800px;
+  /* width: 100%; */
+  max-width: 700px;
+  min-width: 700px;
   margin: auto;
   padding: 30px;
 }
@@ -21,13 +24,60 @@
   font-family: Calligraffitti;
   text-align: center;
   font-size: 50px;
-  /* color: magenta; */
+  color: var(--pinkred);
 }
 
 .mainSubtitle {
   font-weight: 400;
   padding-top: 20px;
   padding-bottom: 20px;
+  /* color: var(--darkpink); */
+}
+
+.features {
+  /* display: flex; */
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.colorSelection {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 5px;
+}
+.colorSelection select {
+  border: none;
+  padding: 8px 20px;
+  font-size: 12px;
+  outline: none;
+}
+
+.selectedColor {
+  border: none;
+  padding: 15px;
+  font-size: 12px;
+  color: white;
+  border-radius: 50%;
+}
+.selectedColorIsRed {
+  background-color: #c9356c;
+}
+
+.selectedColorIsGreen {
+  background-color: green;
+}
+
+.selectedColorIsBlue {
+  background-color: blue;
+}
+.showCases button {
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 12px;
 }
 
 .buttonsArea {
@@ -41,7 +91,56 @@
   width: 100%;
   border-radius: 10px;
   border: none;
-  background-color: lightblue;
+  background-color: var(--pinkred);
   color: white;
   min-width: 0;
+}
+
+.buttonsArea button:hover {
+  background-color: var(--darkpink);
+  cursor: pointer;
+}
+
+.buttonsArea button:active {
+  background-color: var(--pinkred);
+  cursor: pointer;
+}
+.start {
+  font-weight: 900;
+}
+
+.buttonsArea .createTrail {
+  color: var(--darkpink);
+  border: 1px solid var(--darkpink);
+  background-color: var(--gray);
+  display: none;
+}
+.buttonsArea .createTrail:hover {
+  color: white;
+  background-color: var(--lightpink);
+}
+.buttonsArea .createTrail:active {
+  color: white;
+  background-color: var(--pinkred);
+}
+.drawPad {
+  padding-top: 20px;
+  width: 800px;
+  height: 800px;
+}
+
+.drawBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.drawBoxes div {
+  height: 50px;
+  border: 0.25px solid var(--gray);
+}
+
+.mouseRanOver {
+  background-color: var(--lightpink);
+  /* Opacity option bug not fixed yet */
+  opacity: 25;
 }
