@@ -24,7 +24,7 @@ function changeGridSize() {
 
   //
   drawingPixel.forEach((individualPixel) => {
-    individualPixel.addEventListener('mousedown', mouseRanOverBro);
+    individualPixel.addEventListener('mouseover', mouseRanOverBro);
   });
 
   //  Reset Drawpad
